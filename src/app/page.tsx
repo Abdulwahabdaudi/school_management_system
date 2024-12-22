@@ -88,14 +88,14 @@ const LandingPage = () => {
             </div>
 
             {/* Mobile menu button */}
-            {/* <div className="md:hidden">
+            <div className="md:hidden">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 className="text-gray-600 hover:text-blue-600"
               >
                 {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
               </button>
-            </div> */}
+            </div>
           </div>
 
           {/* Mobile Navigation */}
