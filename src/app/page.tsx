@@ -68,7 +68,7 @@ const LandingPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Header */}
+      Header
       <header className="bg-white shadow-sm sticky top-0 z-50">
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
@@ -88,14 +88,14 @@ const LandingPage = () => {
             </div>
 
             {/* Mobile menu button */}
-            <div className="md:hidden">
+            {/* <div className="md:hidden">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 className="text-gray-600 hover:text-blue-600"
               >
                 {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
               </button>
-            </div>
+            </div> */}
           </div>
 
           {/* Mobile Navigation */}
@@ -273,7 +273,7 @@ const LandingPage = () => {
               <p className="text-blue-100 mb-8 max-w-2xl mx-auto">
                 Subscribe to our newsletter for the latest updates and features.
               </p>
-              <form onSubmit={handleSubscribe} className="max-w-md mx-auto flex gap-4">
+              <form onSubmit={handleSubscribe} className="max-w-md mx-auto md:flex gap-4">
                 <input
                   type="email"
                   value={email}
@@ -284,7 +284,7 @@ const LandingPage = () => {
                 />
                 <button
                   type="submit"
-                  className="bg-white text-blue-600 px-6 py-2 rounded-md hover:bg-blue-50 transition-colors font-medium"
+                  className="bg-white text-blue-600 px-6 py-2 rounded-md hover:bg-blue-50 transition-colors font-medium mt-4 md:mt-0"
                 >
                   Subscribe
                 </button>
